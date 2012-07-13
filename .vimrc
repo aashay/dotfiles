@@ -59,9 +59,9 @@ vnoremap <tab> %
 
 " Deal with long lines correctly
 set wrap
-set textwidth=79
+set textwidth=100
 set formatoptions=qrn1
-set colorcolumn=100
+set colorcolumn=110
 
 " Remap ; to : so you can be lazy
 nnoremap ; :
@@ -94,3 +94,13 @@ endif
 
 " create a shortcut to get out of insert mode by typing 'jj'
 inoremap jj <ESC>
+
+" Auto open nerdtree when vim starts
+autocmd vimenter * NERDTree
+
+" Auto open nerdtree when no file was specified
+autocmd vimenter * if !argc() | NERDTree | endif
+
+" Close vim if only nerdtree is open.  Leaving this commented out for now...
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&
+" b:NERDTreeType == "primary") | q | endif
