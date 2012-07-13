@@ -5,9 +5,73 @@ set autoindent
 set softtabstop=4
 set tabstop=4
 set shiftwidth=4
+set expandtab
+
+
+" Don't need vi compatibility
+set nocompatible
+
+" Some weird thing re: security
+set modelines=0
+
+
+
+set encoding=utf-8
+
+set showmode
+set showcmd
+set wildmenu
+set wildmode=list:longest
+set visualbell
+set ttyfast
+
+" Show where you are
+set ruler
+
+
+" Always show status line
+set laststatus=2
+
+set undofile
+
+" Highlight current line 
+set cursorline
+
 
 set ignorecase
 set smartcase
+
+" Hide buffers instead of close them
+set hidden
+
+
+" Highlight search results
+set incsearch
+set showmatch
+set hlsearch
+
+" Clear search with leader space
+nnoremap <leader><space> :noh<cr>
+
+" Match brackets with tab
+nnoremap <tab> %
+vnoremap <tab> %
+
+" Deal with long lines correctly
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=100
+
+" Remap ; to : so you can be lazy
+nnoremap ; :
+
+" Remap , to be the leader key
+let mapleader = ","
+
+
+" Split window and move to that new split
+nnoremap <leader>w <C-w>v<C-w>l
 
 
 filetype plugin indent on
