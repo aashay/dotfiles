@@ -78,7 +78,7 @@ nnoremap <leader>w <C-w>v<C-w>l
 
 filetype plugin indent on
 set background=dark
-colorscheme sunburst
+colorscheme solarized
 set number
 let showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 let g:showmarks_enable = 1 
