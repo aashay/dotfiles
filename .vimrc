@@ -96,11 +96,11 @@ endif
 inoremap jj <ESC>
 
 " Auto open nerdtree when vim starts
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 
 " Auto open nerdtree when no file was specified
 autocmd vimenter * if !argc() | NERDTree | endif
 
 " Close vim if only nerdtree is open.  Leaving this commented out for now...
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&
-" b:NERDTreeType == "primary") | q | endif
+b:NERDTreeType == "primary") | q | endif
