@@ -15,7 +15,7 @@ set nocompatible
 set modelines=0
 
 
-
+" UTF-8 makes the world go 'round
 set encoding=utf-8
 
 set showmode
@@ -32,6 +32,7 @@ set ruler
 " Always show status line
 set laststatus=2
 
+" Create an undofile
 set undofile
 
 " Highlight current line 
@@ -60,16 +61,12 @@ nnoremap ; :
 " Clear search with leader space
 nnoremap <leader><space> :noh<cr>
 
-" Match brackets with tab
-nnoremap <tab> %
-vnoremap <tab> %
 
 " Deal with long lines correctly
 set wrap
 set textwidth=100
 set formatoptions=qrn1
 set colorcolumn=110
-
 
 
 " Split window and move to that new split
