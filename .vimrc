@@ -50,6 +50,13 @@ set incsearch
 set showmatch
 set hlsearch
 
+
+" Remap , to be the leader key
+let mapleader=","
+
+" Remap ; to : so you can be lazy
+nnoremap ; :
+
 " Clear search with leader space
 nnoremap <leader><space> :noh<cr>
 
@@ -63,11 +70,6 @@ set textwidth=100
 set formatoptions=qrn1
 set colorcolumn=110
 
-" Remap ; to : so you can be lazy
-nnoremap ; :
-
-" Remap , to be the leader key
-let mapleader = ","
 
 
 " Split window and move to that new split
