@@ -102,5 +102,4 @@ inoremap jj <ESC>
 autocmd vimenter * if !argc() | NERDTree | endif
 
 " Close vim if only nerdtree is open.  Leaving this commented out for now...
-" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&
-b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
