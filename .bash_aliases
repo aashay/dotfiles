@@ -15,3 +15,4 @@ alias gcl='git clone'
 
 #Misc
 alias share='python -m SimpleHTTPServer'
+alias raspi='ssh pi@10.0.1.28'
