@@ -13,6 +13,9 @@ alias grr='git remote rm'
 alias gpu='git pull'
 alias gcl='git clone'
 
+alias gsubup='git submodule update --init --recursive'
+
+
 #Misc
 alias share='python -m SimpleHTTPServer'
 alias raspi='ssh pi@10.0.1.28'
