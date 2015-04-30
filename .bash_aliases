@@ -19,3 +19,5 @@ alias gsubup='git submodule update --init --recursive'
 #Misc
 alias share='python -m SimpleHTTPServer'
 alias raspi='ssh pi@10.0.1.28'
+alias temp='curl -s  http://4ca.st/ajax.php?action=current\&zip=94105 | json current.temperature'
+alias forecast='curl -s http://4ca.st/ajax.php?action=forecast\&zip=94105 | json forecast | json -a dayname daytime.hightemp'
